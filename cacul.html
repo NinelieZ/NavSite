@@ -1,0 +1,123 @@
+﻿
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+    <meta charset="utf-8">
+    <title>喵帕斯</title>
+    <link rel="stylesheet" href="./css/material.min.css">
+    <link rel="stylesheet" href="./css/HelloWorld.css">
+    <script src="./js/material.min.js"></script>
+    <script src="./js/HelloWorld.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32" sizes="32x32">
+    <style>
+        .newtab-layout-transparent {
+            background: url('./resources/background.jpg') center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="newtab-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+
+                    <form id="searchtool" action="https://www.baidu.com/s">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" id="sample6" name="wd">
+                                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                        </div>
+                    </form>
+                    <button id="pG" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect" onclick="GithubIcon()"></button>
+                    <button id="pW" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect" onclick="WeiboIcon()"></button>
+                </nav>
+
+            </div>
+
+        </header>
+        <div id="menu" class="mdl-layout__drawer">
+            <span class="mdl-layout-title">导航</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./index.html">
+                    <i class="material-icons">home</i>
+                    <span class="tabtext">首页</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle mdl-button--raised active" href="./cacul.html">
+                    <i class="material-icons">apps</i>
+                    <span class="tabtext">计算器</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./trans.html">
+                    <i class="material-icons">loop</i>
+                    <span class="tabtext">进制转换</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+
+
+    </div>
+    <div>
+        <div id="neteasemusic">
+            <iframe frameborder="0" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="http://music.163.com/outchain/player?type=0&id=2209835783&auto=0&height=90"></iframe>
+        </div>
+
+    </div>
+    <div >
+        <div class=" boxstyle" align="center">
+                <div class="displayBox">
+                        <input type="text" id="temp"  readonly>
+                        <input type="text" id="result" readonly>
+                    </div>
+                <div class="numberpad ">
+                        <div class="mdl-grid row">
+                            <button id="clear" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn1" onclick="clears()">C</button>
+                            <button id="right" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn2" onclick="right()">(</button>
+                            <button id="left" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn3" onclick="left()">)</button>
+                            <button id="backspace" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn4 " onclick="backspaces()">←</button>
+                        </div>
+                        <div class="mdl-grid row">
+                            <button id="seven" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn1 " onclick="sevens()">7</button>
+                            <button id="eight" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn2" onclick="eights()">8</button>
+                            <button id="nine" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn3" onclick="nines()">9</button>
+                            <button id="add" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn4" onclick="adds()">+</button>
+                        </div>
+                        <div class="mdl-grid row">
+                            <button id="four" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn1 " onclick="fours()">4</button>
+                            <button id="five" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn2 " onclick="fives()">5</button>
+                            <button id="six" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn3 " onclick="sixs()">6</button>
+                            <button id="subtract" class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn4" onclick="substracts()">−</button>
+                        </div>
+                        <div class="mdl-grid row">
+                            <button id="one" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn1 " onclick="ones()">1</button>
+                            <button id="two" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn2 " onclick="twos()">2</button>
+                            <button id="three" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn3 " onclick="threes()">3</button>
+                            <button id="multiply" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn4 " onclick="multiplys()">×</button>
+                        </div>
+                        <div class="mdl-grid row">
+                            <button id="zero" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn2 " onclick="zeros()">0</button>
+                            <button id="dot" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn1 " onclick="dots()">.</button>
+                            <button id="divide" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn4 " onclick="divides()">÷</button>
+                            <button id="equal" class="mdl-cell mdl-cell--1-col mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-js-ripple-effect btn3 " onclick="equals()">=</button>
+                        </div>
+                        </div>
+                    </div>
+                
+                </div>
+            
+
+    </div>
+
+</body>
+</html> 

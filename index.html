@@ -1,1 +1,137 @@
-Hello World!
+﻿<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+      <meta charset="utf-8">
+      <title>喵帕斯</title>
+      <link rel="stylesheet" href="./css/material.min.css">
+      <link rel="stylesheet" href="./css/HelloWorld.css">
+      <script src="./js/material.min.js"></script>
+      <script src="./js/HelloWorld.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="icon" href="https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32" sizes="32x32">
+      <style>
+          .newtab-layout-transparent {
+              background: url('./resources/background.jpg') center;
+
+          }
+      </style>
+  </head>
+
+
+ 
+<body>
+    <div class="newtab-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <button id="pG" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect"onclick="GithubIcon()"></button>
+                    <button id="pW" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect"onclick="WeiboIcon()"></button>
+
+                </nav>
+
+            </div>
+
+        </header>
+        <div id="menu" class="mdl-layout__drawer">
+            <span class="mdl-layout-title">导航</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle mdl-button--raised active" href="./index.html">
+                    <i class="material-icons">home</i>
+                    <span class="tabtext">首页</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./cacul.html">
+                    <i class="material-icons">apps</i>
+                    <span class="tabtext">计算器</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./trans.html">
+                    <i class="material-icons">loop</i>
+                    <span class="tabtext">进制转换</span>
+                </a>
+
+            </nav>
+
+        </div>
+        
+        
+
+    </div>
+    <div>   
+        <div  id="logo">
+            <img src="./resources/logo.png" />
+        </div>
+        <div id="search">
+            <i class="material-icons pos">search</i>
+            <form id="searchForm" action="https://www.baidu.com/s">
+                <input id="searchBox"  type="text"  name="wd" placeholder="百度一下，你就知道">
+
+            </form>
+
+        </div>
+        <div id="neteasemusic">
+            <iframe  frameborder="0" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="http://music.163.com/outchain/player?type=0&id=2209835783&auto=0&height=90"></iframe>
+        </div>
+        <div id="mostvisited">
+            <div class="mdl-grid ">
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect  gridsize" href="https://www.bilibili.com/">
+                        <img class="iconstyle" src="./resources/bilibili.png"><div class="textcolor">哔哩哔哩</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="https://www.zhihu.com/">
+                        <img class="iconstyle" src="./resources/zhi.png"><div class="textcolor">知乎</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="https://www.weibo.com/">
+                        <img class="iconstyle" src="./resources/weibo.png"><div class="textcolor">微博</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="https://www.github.com/">
+                        <img class="iconstyle" src="./resources/git.png"><div class="textcolor">GitHub</div>
+                    </a>
+
+                </div>
+                
+
+            </div>
+             <div class="mdl-grid ">
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect  gridsize" href="https://www.iqiyi.com/">
+                        <img class="iconstyle" src="./resources/iqiyi.png"><div class="textcolor">爱奇艺</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="https://tools.miku.ac/">
+                        <img class="iconstyle" src="./resources/miku.png"><div class="textcolor">MikuTools</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="https://www.v2ex.com/">
+                        <img class="iconstyle" src="./resources/v2ex.png"><div class="textcolor">V2EX</div>
+                    </a>
+
+                </div>
+                <div class="mdl-cell mdl-cell--1-col gridstyle">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect gridsize" href="http://1.kisssub.org/#continue">
+                        <img class="iconstyle" src="./resources/kisssub.png"><div class="textcolor">爱恋BT</div>
+                    </a>
+
+                </div>
+                
+
+            </div>
+        </div>
+           
+    </div>
+
+</body>
+</html> 

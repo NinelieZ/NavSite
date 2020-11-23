@@ -1,0 +1,107 @@
+﻿
+<!DOCTYPE html>
+<html class="mdc-typography">
+<head>
+    <meta charset="utf-8">
+    <title>喵帕斯</title>
+    <link rel="stylesheet" href="./css/material.min.css">
+    <link rel="stylesheet" href="./css/HelloWorld.css">
+    <script src="./js/material.min.js"></script>
+    <script src="./js/HelloWorld.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=32%2C32" sizes="32x32">
+    <style>
+        .newtab-layout-transparent {
+            background: url('./resources/background.jpg') center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="newtab-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+
+                    <form id="searchtool" action="https://www.baidu.com/s">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" id="sample6" name="wd">
+                                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                        </div>
+                    </form>
+                    <button id="pG" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect" onclick="GithubIcon()"></button>
+                    <button id="pW" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab  mdl-js-ripple-effect" onclick="WeiboIcon()"></button>
+                </nav>
+
+            </div>
+
+        </header>
+        <div id="menu" class="mdl-layout__drawer">
+            <span class="mdl-layout-title">导航</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./index.html">
+                    <i class="material-icons">home</i>
+                    <span class="tabtext">首页</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle" href="./cacul.html">
+                    <i class="material-icons">apps</i>
+                    <span class="tabtext">计算器</span>
+                </a>
+                <a class="mdl-button mdl-js-button mdl-js-ripple-effect cardstyle mdl-button--raised active" href="./trans.html">
+                    <i class="material-icons">loop</i>
+                    <span class="tabtext">进制转换</span>
+                </a>
+
+            </nav>
+
+        </div>
+
+
+
+    </div>
+    <div>
+        <div id="neteasemusic">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="http://music.163.com/outchain/player?type=0&id=2209835783&auto=0&height=90"></iframe>
+        </div>
+
+    </div>
+    <div class="mdl-button--raised"></div>
+    <div id="hexconvert">
+        <div class="block">
+            <label>二进制</label><br />
+            <input id="bin_input" type="text" class="inputstyle" placeholder="请输入二进制" />
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="bin()">转换</button>
+        </div>
+        <div class="block">
+            <label>八进制</label><br />
+            <input id="oct_input" type="text" class="inputstyle" placeholder="请输入八进制" />
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="oct()">转换</button>
+        </div>
+        <div class="block">
+            <label>十进制</label><br />
+            <input id="dec_input" type="text" class="inputstyle" placeholder="请输入十进制" />
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="dec()">转换</button>
+        </div>
+        <div class="block">
+            <label>十六进制</label><br />
+            <input id="hex_input" type="text" class="inputstyle" placeholder="请输入十六进制" />
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="hex()">转换</button>
+        </div>
+        <div class="block">
+            <label>三十二进制</label><br />
+            <input id="thr_input" type="text" class="inputstyle" placeholder="请输入三十二制" />
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="thr()">转换</button>
+        </div>
+    </div>
+
+</body>
+</html> 
